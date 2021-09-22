@@ -17,6 +17,11 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
 
+  *, *+* {
+    padding: 0;
+    margin: 0;
+  }
+
 `
 
 const Layout = ({ children }) => {
