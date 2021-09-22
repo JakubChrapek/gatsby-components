@@ -4,7 +4,8 @@ import { COLORS } from "../constants"
 import { Send } from "./icons"
 
 const Wrapper = styled.article`
-  max-width: clamp(360px, 25vw, 90vw);
+  width: 360px;
+  max-width: 90vw;
   background-color: ${COLORS.white};
   border-radius: 40px;
   display: flex;
@@ -26,6 +27,10 @@ const Header = styled.h2`
 
 const Image = styled.img`
   aspect-ratio: 360/264;
+  object-fit: cover;
+  @media (max-width: 360px) {
+    aspect-ratio: 360/340;
+  }
   width: 100%;
 `
 
@@ -46,24 +51,29 @@ const TextWrapper = styled.div`
     font-size: 14px;
     line-height: 1.5;
     color: ${COLORS.black700};
+    margin-bottom: 14px;
   }
 `
 
 const TagsList = styled.ul`
   list-style: none;
   padding: 0;
-  display: grid;
-  grid-gap: 16px 10px;
-  grid-auto-flow: column;
+  display: flex;
   flex-wrap: wrap;
-  margin-top: 24px;
 `
 
 const Tag = styled.li`
+  &:not(:last-of-type) {
+    margin-right: 10px;
+  }
+  margin-top: 10px;
   padding: 10px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background-color: ${COLORS.primary100};
   color: ${COLORS.primary500};
