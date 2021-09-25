@@ -9,11 +9,11 @@ export default function Home() {
     <Layout>
       <Wrapper>
         <Card
-          title="Hotel 123"
-          text="Sem nunc non turpis nunc convallis turpis malesuada iaculis lacinia."
+          title="Sarah's Palace"
+          text="Go to sleep and wake up to the sound of the waves. Exceptional place."
           tags={["dog friendly", "non smoking", "sea view"]}
           img={cardBg}
-          imgAlt="Sea landscape"
+          imgAlt="Sea landscape from Sarah's Palace apartment"
         />
       </Wrapper>
     </Layout>

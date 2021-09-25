@@ -39,7 +39,7 @@ const IconWrapper = styled.div`
   display: flex;
   border-radius: 50%;
   background-color: ${COLORS.primary300};
-  padding: 20px 21px 17px 16px;
+  padding: 16px 17px 13px 12px;
   margin: -32px 24px 0 0;
 `
 
@@ -87,7 +87,7 @@ const Card = ({ img, imgAlt, tags, text, title }) => {
       </Header>
       <Image src={img} alt={imgAlt} />
       <IconWrapper>
-        <Send stroke={COLORS.white} width="27" height="27" />
+        <Send stroke={COLORS.white} width="34" height="34" />
       </IconWrapper>
       <TextWrapper>
         <p>{text}</p>
